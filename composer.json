@@ -1,0 +1,9 @@
+{
+  "name": "bluzphp/module-profile",
+  "type": "bluz-profile",
+  "license": "MIT",
+  "description": "bluz profile module",
+  "require": {
+    "bluzphp/composer-plugin": "~2.1"
+  }
+}
