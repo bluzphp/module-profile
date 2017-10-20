@@ -28,4 +28,14 @@ class Table extends \Bluz\Db\Table
      * @var array
      */
     protected $primary = ['userId'];
+
+    /**
+     * init
+     *
+     * @return void
+     */
+    public function init()
+    {
+        $this->linkTo('userId', 'Users', 'id');
+    }
 }
