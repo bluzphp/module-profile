@@ -1,6 +1,6 @@
 {
   "name": "bluzphp/module-profile",
-  "type": "bluz-profile",
+  "type": "bluz-module",
   "license": "MIT",
   "description": "bluz profile module",
   "require": {
