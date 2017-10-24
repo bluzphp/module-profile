@@ -1,9 +1,8 @@
 <?php
 
-
 use Phinx\Migration\AbstractMigration;
 
-class ModuleProfile extends AbstractMigration
+class Profile extends AbstractMigration
 {
     /**
      * Change Method.

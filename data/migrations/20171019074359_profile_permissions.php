@@ -2,7 +2,7 @@
 
 use Phinx\Migration\AbstractMigration;
 
-class ModuleProfilePermissions extends AbstractMigration
+class ProfilePermissions extends AbstractMigration
 {
     /**
      * Migrate Up.
