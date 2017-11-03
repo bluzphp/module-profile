@@ -1,6 +1,6 @@
 <?php /** @var \Application\UsersProfiles\Row $row */ ?>
 <?php $uid = uniqid('form_', false); ?>
-<form id="<?=$uid?>" action="<?=$this->url('profile', 'crud')?>" class="form-horizontal ajax" method="POST">
+<form id="<?=$uid?>" action="<?=$this->url('profile', 'crud')?>" class="form-horizontal" data-ajax method="POST">
     <input type="hidden" name="_method" value="<?=$method?>"/>
     <div class="modal-header">
       <h4 class="modal-title"><?=__('Profile')?></h4>
