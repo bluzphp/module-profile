@@ -5,7 +5,7 @@
     <h4 class="card-title"><?= __('Change information') ?></h4>
     <div class="card w-50 center">
       <div class="card-body">
-        <form id="<?= $uid ?>" action="<?= $this->url('users', 'change-profile') ?>" class="ajax form-horizontal"
+        <form id="<?= $uid ?>" action="<?= $this->url('users', 'change-profile') ?>" class="form-horizontal" data-ajax
               method="POST">
           <input type="hidden" name="_method" value="<?=$method?>"/>
           <div class="form-group row">
