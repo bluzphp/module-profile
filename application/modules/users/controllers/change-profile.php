@@ -25,14 +25,14 @@ return function () {
     $this->assign('user', $this->user());
 
     // if profile not exists, than create it
-    if (!$row = Table::findRow(Auth::getIdentity()->id)) {
-        $row = Table::create(['userId' => Auth::getIdentity()->id]);
+    if (!$row = Table::findRow(Auth::getIdentity()->getId())) {
+        $row = Table::create(['userId' => Auth::getIdentity()->getId()]);
         $row->save();
     }
 
 
     $crud = new Crud(UsersProfiles\Crud::getInstance());
-    $crud->addParam('userId', Auth::getIdentity()->id);
+    $crud->addParam('userId', Auth::getIdentity()->getId());
 
     $crud->get('system', 'crud/get');
     $crud->post('system', 'crud/post')->fields(['firstName', 'lastName', 'birthday']);

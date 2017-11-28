@@ -21,5 +21,5 @@ return function ($id = null) {
     /**
      * @var Controller $this
      */
-    $this->assign('profile', Table::findRow($id ?? Auth::getIdentity()->id));
+    $this->assign('profile', Table::findRow($id ?? Auth::getIdentity()->getId()));
 };
