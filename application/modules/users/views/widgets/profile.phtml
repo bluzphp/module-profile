@@ -1,8 +1,9 @@
-<ul class="list-group list-group-flush">
-  <li class="list-group-item">
-    <h4 class="card-title">
-        <?= esc($profile->firstName) ?>
+<?php if ($profile->firstName || $profile->lastName) : ?>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+        <?= esc($profile->firstName) ?><br>
         <?= esc($profile->lastName) ?>
-    </h4>
-  </li>
-</ul>
+    </li>
+  </ul>
+<?php endif; ?>
+
