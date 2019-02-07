@@ -31,7 +31,7 @@ class Row extends \Bluz\Db\Row
      *
      * @return void
      */
-    public function beforeSave() : void
+    public function beforeSave(): void
     {
         $this->addValidator('firstName')->alpha();
         $this->addValidator('lastName')->alpha();
@@ -41,7 +41,7 @@ class Row extends \Bluz\Db\Row
     /**
      * @return void
      */
-    public function beforeInsert() : void
+    public function beforeInsert(): void
     {
         $this->created = gmdate('Y-m-d H:i:s');
         $this->userId = Auth::getIdentity()->getId();
@@ -50,7 +50,7 @@ class Row extends \Bluz\Db\Row
     /**
      * @return void
      */
-    public function beforeUpdate() : void
+    public function beforeUpdate(): void
     {
         $this->updated = gmdate('Y-m-d H:i:s');
     }
