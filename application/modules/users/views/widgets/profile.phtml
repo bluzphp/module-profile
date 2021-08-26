@@ -1,3 +1,10 @@
-<?php if ($profile) :?>
-  <li class="list-group-item"><?= esc($profile->firstName) ?> <?= esc($profile->lastName) ?></li>
+<?php if (isset($profile) && $profile) : ?>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">
+    <h4 class="card-title">
+        <?= esc($profile->firstName) ?>
+        <?= esc($profile->lastName) ?>
+    </h4>
+  </li>
+</ul>
 <?php endif; ?>

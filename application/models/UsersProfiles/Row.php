@@ -1,7 +1,9 @@
 <?php
+
 /**
  * @namespace
  */
+
 namespace Application\UsersProfiles;
 
 use Bluz\Proxy\Auth;
