@@ -6,8 +6,6 @@
 
 namespace Application\UsersProfiles;
 
-use Application\UsersProfiles\Row;
-
 /**
  * Class Table for `users_profiles`
  *
